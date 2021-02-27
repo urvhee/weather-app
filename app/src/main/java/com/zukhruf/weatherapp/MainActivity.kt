@@ -93,11 +93,6 @@ class MainActivity : AppCompatActivity(), MainView {
 
     private fun initPresenter() {
         presenter = MainPresenter(this, this)
-
-//        presenter?.getLast()
-//        presenter?.getById(weatherModel!!.id)
-//        presenter?.saveCache(weatherModel!!)
-//        presenter?.updateCache(weatherModel!!)
     }
 
     private fun clearView() {
@@ -323,26 +318,4 @@ class MainActivity : AppCompatActivity(), MainView {
         private const val appId = "48d12086987d15ea4ec7dc69b987effb"
         private val LOCATION_PERMISSION_REQUEST_CODE = 111
     }
-
-    //    override fun onStart() {
-//        super.onStart()
-//        when {
-//            PermissionUtils.isAccessFineLocationGranted(this) -> {
-//                when {
-//                    PermissionUtils.isLocationEnabled(this) -> {
-//                        setUpLocationListener()
-//                    }
-//                    else -> {
-//                        PermissionUtils.showGPSNotEnabledDialog(this)
-//                    }
-//                }
-//            }
-//            else -> {
-//                PermissionUtils.requestAccessFineLocationPermission(
-//                    this,
-//                    LOCATION_PERMISSION_REQUEST_CODE
-//                )
-//            }
-//        }
-//    }
 }
